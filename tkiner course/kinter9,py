@@ -1,0 +1,49 @@
+
+from tkinter import *
+from turtle import left
+from tkinter import messagebox as tmsg 
+
+
+root = Tk()
+root.title("News Paper")
+root.geometry("900x600")
+
+
+def any():
+    print("Thanks ")
+    tmsg.showinfo("Hotel review",f"You like {var.get()} ")
+   
+
+var = StringVar()
+var.set("Radiio")        
+
+Label(root,text="Thanks for orderring food",fg="blue",font="ITALIC 23 bold",justify=LEFT).pack()
+
+radio= Radiobutton(root, text="Dosa",variable=var,value="Dosa").pack(anchor="w")
+radio= Radiobutton(root, text="pizza",variable=var,value="pizza").pack(anchor="w")
+radio= Radiobutton(root, text="samosa",variable=var,value="samosa").pack(anchor="w")
+radio= Radiobutton(root, text="meggy",variable=var,value="meggy").pack(anchor="w")
+
+
+
+Button(root,text="Sbmit",fg="red",command=any).pack(anchor="w")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+root,mainloop()
